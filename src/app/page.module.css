@@ -5,7 +5,16 @@
   }
   .text {
     color: #777;
+    font-size: 22px;
+    width: 400px;
+    display: inline-block;
   }
+
+  .image {
+    border-radius: 50%;
+    display: inline-block;
+  }
+
   .btn {
     display: block;
     width: 150px;

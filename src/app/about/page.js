@@ -4,9 +4,6 @@ import Head from 'next/head'
 const About = () => {
   return (
     <>
-      <Head>
-        <title>Tristan Pagden | About</title>
-      </Head>
       <div>About</div>
     </>
     
@@ -14,3 +11,7 @@ const About = () => {
 }
 
 export default About
+
+export const metadata = {
+  title: "Tristan Pagden | About"
+};

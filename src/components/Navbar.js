@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <h1 class='logo'>Tristan Pagden</h1>
+        <h1 className='logo'>Tristan Pagden</h1>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/portfolio">Portfolio</Link>
