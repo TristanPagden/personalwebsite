@@ -8,11 +8,39 @@
     font-size: 22px;
     width: 400px;
     display: inline-block;
+    vertical-align: top;
+    margin-left: 205px;
   }
 
-  .image {
+  .skills_title {
+    color: #777;
+    font-size: 22px;
+    display: inline-block;
+  }
+
+  .skills {
+    margin-top: 100px;
+    margin-left:110px
+  }
+
+  .skills_image {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: bottom;
+  }
+
+  .profile_image {
     border-radius: 50%;
     display: inline-block;
+  }
+
+  .social_images {
+    margin-left: 200px;
+  }
+
+  .social_image {
+    padding: 10px;
+    padding-top: 0px;
   }
 
   .btn {
