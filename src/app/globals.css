@@ -5,6 +5,11 @@ body {
   color: #333;
   font-family: "Nunito";
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -20,6 +25,9 @@ nav {
   justify-content: flex-end;
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  width: 960px;
 }
 nav a {
   margin-left: 12px;
