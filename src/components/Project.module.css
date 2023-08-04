@@ -1,0 +1,44 @@
+.wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #90ee90;
+    border-radius: 1rem;
+    border-color: rgb(38, 97, 38);
+    border: visible;
+    border-width: 5px;
+    box-shadow: 0 0 20px 0 #90ee90;
+}
+
+.text {
+    font-size: 22px;
+    color: #333;
+    padding: 10px;
+}
+
+.title {
+    color: #333;
+    font-size: 28px;
+}
+
+.imageWrapper {
+    display: inline-block
+}
+
+.infoWrapper {
+    display: inline-block
+}
+
+.link {
+    display: inline-block
+}
+
+.languages {
+    font-size: 22px;
+    color: #333;
+    font-weight: 800;
+}
+
+.image {
+    border-radius: 1rem;
+}

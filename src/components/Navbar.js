@@ -2,17 +2,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import Head from 'next/head';
+import styles from './Navbar.module.css'
 
 
 const Navbar = () => {
   return (
     <>
-      <nav>
-        <h1 className='logo' onclick="return false">Tristan Pagden</h1>
-        <Link legacyBehavior={true} href="/"><a  >Home</a></Link>
-        <Link legacyBehavior={true} href="#about"><a >About</a></Link>
-        <Link legacyBehavior={true} href="#portfolio"><a >Portfolio</a></Link>
-        <Link legacyBehavior={true} href="#contact"><a >Contact</a></Link>
+      <nav className={styles.navbar} >
+        <h1 className={styles.logo}>tristanPagden</h1>
+        <div className={styles.links}>
+          <Link className={styles.link} href="/">Home</Link>
+          <Link className={styles.link} href="#about">About</Link>
+          <Link className={styles.link}  href="#portfolio">Portfolio</Link>
+          <Link className={styles.link} href="#contact">Contact</Link>
+        </div>
       </nav>
     </>
   );
