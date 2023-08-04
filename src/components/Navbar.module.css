@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(38, 97, 38);
+    border: none;
+    padding-left: 0;
+    box-shadow: 0 0 20px 0 black;
+  }
+  .link {
+    margin-right: 20px;
+    color: #f2f2f2;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .links {
+    display: flex;
+    margin: auto 0;
+    padding-right: 50px;
+  }
+  .logo {
+    font-size: 28px;
+    color: #f2f2f2;
+    padding: 15px 15px;
+    margin: auto auto auto 0;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+  }
