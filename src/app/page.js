@@ -15,6 +15,3 @@ export default function Home() {
     )
 }
 
-export const metadata = {
-  title: "Tristan Pagden"
-};

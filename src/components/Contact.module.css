@@ -10,7 +10,7 @@
   }
 
   .contact {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +20,7 @@
   .title{
     text-align: center;
     color: #333;
+    font-family: "Nunito";
   }
 
   .info{
@@ -27,10 +28,10 @@
     margin-right: auto;
     color: #333;
     padding: 10px;
-    box-shadow: 0 0 20px 0 #6eca6e;
+    box-shadow: 0 0 20px 0 #266126;
     border-radius: 1rem;
     background: #6eca6e;
-    border-color: rgb(38, 97, 38);
+    border-color: #266126;
     border: visible;
     border-width: 5px;
   }
@@ -50,6 +51,7 @@
     text-align: center;
     color: #333;
     display: inline-block;
+    font-family: "Nunito";
   }
 
   .wrapper {

@@ -1,25 +1,47 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './HomePage.module.css'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const HomePage = () => {
+
+  const [ref, inView] = useInView();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if(inView) {
+      controls.start({opacity: 1, scale: 1,
+        transition: {
+          duration: 0.5 
+        }});
+    }
+    if(!inView) {
+      controls.start({ opacity: 0, scale: 0.5 });
+    }
+  }, [inView]);
+
   return (
-    <div className={styles.homepage}>
-      <div className={styles.home}>
+    <>
+    <div className={styles.homepage} ref={ref}>
+      <motion.div className={styles.home} animate={controls}>
           <div>
               <h1 className={styles.title}>Full Stack Developer</h1>
               <p className={styles.text}>Hi, I’m Tristan Pagden. I'm an enthusiastic full stack developer based in the UK. I’m also proficient in AI technologies.</p>
               <Image src='/profile_pic.png' width={200} height={200} alt='Profile pic' className={styles.profile_image}></Image>
           </div>
           <div className={styles.social_images}>
-              <Link href='/'>
+              <Link href='https://github.com/TristanPagden'>
               <Image src='/github.png' width={44} height={44} alt='github pic' className={styles.social_image} title='GitHub'></Image>
               </Link>
-              <Link href='/'>
+              <Link href='https://www.linkedin.com/in/tristan-pagden-51ba75286/'>
               <Image src='/linkedin.png' width={44} height={44} alt='linkedin pic' className={styles.social_image} title='Linkedin'></Image>
               </Link>
-              <Link href='/'>
+              <Link href='https://www.upwork.com/freelancers/~0167c5c371fcfc7a1d'>
               <Image src='/upworks.png' width={44} height={44} alt='upworks pic' className={styles.social_image} title='Upwork'></Image>
               </Link>
           </div>
@@ -37,8 +59,9 @@ const HomePage = () => {
               <Image src='/skills/tensorflow.png' width={44} height={44} alt='tensorflow pic' className={styles.skills_image} title='TensorFlow'></Image>
               <Image src='/skills/pytorch.png' width={44} height={44} alt='pytorch pic' className={styles.skills_image} title='PyTorch'></Image>
           </div>
-      </div>
-    </div>  
+      </motion.div>
+    </div>
+  </>  
   )
 }
 

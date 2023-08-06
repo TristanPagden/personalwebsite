@@ -8,7 +8,7 @@
   }
 
   .about {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -17,25 +17,67 @@
 
   .title{
     color: #333;
+    font-family: "Nunito";
     text-align: center;
   }
 
   .info{
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
+    width: 52%;
   }
 
   .text {
     font-size: 22px;
+    font-family: "Nunito";
     color: #333;
-    width: 960px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: #6eca6e;
     border-radius: 1rem;
     padding: 15px;
-    border-color: rgb(38, 97, 38);
+    border-color: #266126;
     border: visible;
     border-width: 5px;
-    box-shadow: 0 0 20px 0 #6eca6e;
+    box-shadow: 0 0 20px 0 #266126;
+  }
+
+  .imageWrapper {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: top;
+    margin-top: 80px;
+    margin-bottom: auto;
+  }
+
+  .image1 {
+    height: 300px;
+    width: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 #266126;
+    border-color: #266126;
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  .image2 {
+    height: 100px;
+    width: auto;
+    border-radius: 1rem;
+    margin: 20px auto;
+    
+  }
+
+  .image2Wrapper {
+    height: 160px;
+    width: 160px;
+    position : relative;
+    top: -70px;
+    right: -230px;
+    border-radius: 50%;
+    background-color: #6eca6e;
+    text-align: center;
+    box-shadow: 0 0 20px 0 #266126;
   }

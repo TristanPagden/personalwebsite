@@ -8,7 +8,7 @@ const Portfolio = () => {
     <div id='portfolio' className={styles.portfoliopage}>
       <div className={styles.portfolio}>
         <h1 className={styles.title}>Portfolio</h1>
-        <Project props={{text: 'text', title: 'title', languages: 'languages', link: 'link', code: 'code', image: '/upworks.png'}}/>
+        <Project props={{text: 'This is my personal website, which you are currently on. This displays my projects and tells you about me!', title: 'My Personal Website', languages: 'Next.js Vanilla CSS', link: '/', code: 'https://github.com/TristanPagden/personalwebsite', image: '/projects/project1.png', slide: '100vw'}}/>
       </div>
     </div>
   )
