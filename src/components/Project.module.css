@@ -10,6 +10,11 @@
     box-shadow: 0 0 20px 0 #90ee90;
 }
 
+.bigWrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .text {
     font-size: 22px;
     color: #333;
@@ -25,6 +30,8 @@
 }
 
 .imageWrapper {
+    margin-top: auto;
+    margin-bottom: auto;
     display: inline-block;
     padding: 10px;
     height: 300px;
@@ -75,6 +82,7 @@
 }
 
 .image {
+    
     border-radius: 1rem;
     vertical-align: middle;
     height: auto;

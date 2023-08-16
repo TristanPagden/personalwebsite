@@ -24,12 +24,12 @@ const Project = ({props}) => {
     }
   }, [inView]);
   return (
-    <div ref={ref}>
+    <div ref={ref} className={styles.bigWrapper}>
       <motion.div className={styles.wrapper} animate={controls}>
           <div className={styles.imageWrapper}>
-            <a href={props.link}>
+            <Link href={props.link}>
               <img src={props.image} className={styles.image}></img>
-            </a>
+            </Link>
           </div>
           <div className={styles.infoWrapper}>
             <h1 className={styles.title}>{props.title}</h1>
