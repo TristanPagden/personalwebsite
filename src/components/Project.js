@@ -28,7 +28,7 @@ const Project = ({props}) => {
       <motion.div className={styles.wrapper} animate={controls}>
           <div className={styles.imageWrapper}>
             <Link href={props.link}>
-              <img src={props.image} className={styles.image}></img>
+              <img src={props.image} className={styles.image} alt='project'></img>
             </Link>
           </div>
           <div className={styles.infoWrapper}>
