@@ -82,7 +82,10 @@
 }
 
 .image {
+    
     border-radius: 1rem;
     vertical-align: middle;
+    height: auto;
     padding: 0;
+    width: 100%;
 }
