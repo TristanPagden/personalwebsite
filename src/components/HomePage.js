@@ -29,7 +29,7 @@ const HomePage = () => {
     <>
     <div className={styles.homepage} ref={ref}>
       <motion.div className={styles.home} animate={controls}>
-          <div>
+          <div className={styles.info}>
               <h1 className={styles.title}>Full Stack Developer</h1>
               <p className={styles.text}>Hi, I&apos;m Tristan Pagden. I'm an enthusiastic full stack developer based in the UK. I&apos;m also proficient in AI technologies.</p>
               <Image src='/profile_pic.png' width={200} height={200} alt='Profile pic' className={styles.profile_image}></Image>

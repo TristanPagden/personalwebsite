@@ -10,8 +10,9 @@
     width: 400px;
     display: inline-block;
     vertical-align: top;
-    margin-left: 205px;
+    margin-left: 165px;
   }
+  
 
   .homepage {
     display: flex;
@@ -27,7 +28,7 @@
     margin-bottom: 225px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px;
+    max-width: 1050px;
   }
 
   .skills_title {
@@ -39,7 +40,7 @@
 
   .skills {
     margin-top: 100px;
-    margin-left:120px;
+    margin-left:auto;
     border-radius: 1rem;
     border-width: 5px;
     border-color: #266126;
@@ -65,7 +66,7 @@
   }
 
   .social_images {
-    margin-left: 200px;
+    margin-left: 265px;
   }
 
   .social_image {
