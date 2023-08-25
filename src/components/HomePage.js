@@ -54,7 +54,9 @@ const HomePage = () => {
               <Image src='/skills/tailwind.png' width={44} height={44} alt='tailwind pic' className={styles.skills_image} title='TailwindCSS'></Image>
               <Image src='/skills/next.png' width={44} height={44} alt='next pic' className={styles.skills_image} title='NextJS'></Image>
               <Image src='/skills/nodejs.png' width={44} height={44} alt='nodejs pic' className={styles.skills_image} title='NodeJS'></Image>
+              <Image src='/skills/express.png' width={44} height={44} alt='express pic' className={styles.skills_image} title='ExpressJS'></Image>
               <Image src='/skills/mongodb.png' width={44} height={44} alt='mongodb pic' className={styles.skills_image} title='MongoDB'></Image>
+              <Image src='/skills/mysql.png' width={44} height={44} alt='mysql pic' className={styles.skills_image} title='MySQL'></Image>
               <Image src='/skills/python.png' width={44} height={44} alt='python pic' className={styles.skills_image} title='Python'></Image>
               <Image src='/skills/tensorflow.png' width={44} height={44} alt='tensorflow pic' className={styles.skills_image} title='TensorFlow'></Image>
               <Image src='/skills/pytorch.png' width={44} height={44} alt='pytorch pic' className={styles.skills_image} title='PyTorch'></Image>
