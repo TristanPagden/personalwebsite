@@ -1,113 +1,62 @@
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <> 
+      <div id='#about' className='text-center mx-auto mt-10 w-1/2'>
+        <h1 className='text-3xl font-bold text-center'>Tristan Pagden - Homepage</h1>
+        <p className='text-lg text-center pt-5'>Hi I am Tristan Pagden I am an aspiring software engineer with particular interest in Artificial intelligence and data science but also with skills in other areas of computer science. I also have an interest in the natural sciences, medicine, economics and philosophy and pretty much anything that takes my fancy at the time. Here I will show some of my projects and qualifications as well as keep a blog on anything I find interesting. I hope you find this page enjoyable, thank you for visiting.</p>
+        <div className='pt-7'>
+          <Link href='https://github.com/TristanPagden'>
+          <Image src='/github.png' width={40} height={40} alt='github pic' className='inline mr-3 ' title='GitHub'></Image>
+          </Link>
+          <Link href='https://www.linkedin.com/in/tristan-pagden-51ba75286/'>
+          <Image src='/linkedin.png' width={40} height={40} alt='linkedin pic' className=' inline mr-3' title='Linkedin'></Image>
+          </Link>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className='flex mx-auto mt-14 w-1/2'>
+        <div className='flex mx-auto max-w-[1200px]'>
+          <div className='flex flex-col grow w-1/4 rounded-md shadow-xl mr-7 ml-1'>
+            <Image src='/profile_pic.png'  width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt='profile pic'></Image>
+            <div className='bg-slate-700 p-2 w-full text-center'>
+              <p className='text-base text-white text-center mb-2'>Check out some of my projects here</p>
+              <a className='bg-slate-600 hover:bg-slate-500 text-white rounded-md p-1 font-bold' href='/projects'>Projects</a>
+            </div>
+          </div>
+          <div className='flex flex-col grow w-1/4 rounded-md shadow-xl mr-7'>
+            <Image src='/profile_pic.png'  width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt='profile pic'></Image>
+            <div className='bg-slate-700 p-2 w-full text-center'>
+              <p className='text-base text-white text-center mb-2'>Check out some of my tutoring here</p>
+              <a className='bg-slate-600 hover:bg-slate-500 text-white rounded-md p-1 font-bold' href='/tutoring'>Tutoring</a>
+            </div>
+          </div>
+          <div className='flex flex-col grow w-1/4 rounded-md shadow-xl'>
+            <Image src='/profile_pic.png'  width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt='profile pic'></Image>
+            <div className='bg-slate-700 p-2 w-full text-center'>
+              <p className='text-base text-white text-center mb-2'>Check out some of my qualifications here</p>
+              <a className='bg-slate-600 hover:bg-slate-500 text-white rounded-md p-1 font-bold' href='/qualifications'>Qualifications</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className='w-1/2 text-center mx-auto mt-10'>
+        <h1 className='font-bold text-2xl'>Skills</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Python</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>JavaScript</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>HTML</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>CSS</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Rust</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Unity</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Tensorflow</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Pytorch</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Tailwind CSS</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>React JS</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Next JS</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Node JS</h1>
+        <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Express JS</h1>
       </div>
-    </main>
+    </>
   )
 }
