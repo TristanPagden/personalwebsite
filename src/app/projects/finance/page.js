@@ -5,9 +5,8 @@ const finance = () => {
   return (
     <div className=''>
       <div className='w-full'>
-        <Project props={{title: 'Pivot point trading strategy with Alpaca and Pytorch', codeLink: 'google.com', demoLink:'google.com', image: '/profile_pic.png'}}></Project>
-        <Project props={{title: 'Options trading strategy with Quantconnect and Pytorch', codeLink: 'google.com', demoLink:'google.com', image: '/profile_pic.png'}}></Project>
-        <Project props={{title: 'AI trading strategy with Alpaca and Pytorch', codeLink: 'google.com', demoLink:'google.com', image: '/profile_pic.png'}}></Project>
+        <Project props={{title: 'Pivot point trading strategy', codeLink: 'https://github.com/TristanPagden/alpaca-pivot-points', demoLink:'https://replit.com/@tristanpagden/alpaca-pivot-points', image: '/projects/finance/pivot_points.jpeg'}}></Project>
+        <Project props={{title: 'AI trading strategies with Pytorch', codeLink: 'https://github.com/TristanPagden/aplaca-ai-strategies', demoLink:'https://replit.com/@tristanpagden/aplaca-ai-strategies', image: '/projects/finance/ai_alpaca.jpg'}}></Project>
       </div>
     </div>
   )
