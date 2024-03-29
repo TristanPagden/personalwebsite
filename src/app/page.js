@@ -1,12 +1,14 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+
 
 export default function Home() {
   return (
     <> 
       <div id='#about' className='text-center mx-auto mt-10 w-1/2 mt-20'>
         <h1 className='text-3xl font-bold text-center'>Tristan Pagden - Homepage</h1>
-        <p className='text-lg text-center pt-5'>Hi I am Tristan Pagden I am an aspiring software engineer with particular interest in Artificial intelligence and data science but also with skills in other areas of computer science. I also have an interest in the natural sciences, medicine, economics and philosophy and pretty much anything that takes my fancy at the time. Here I will show some of my projects and qualifications as well as keep a blog on anything I find interesting. I hope you find this page enjoyable, thank you for visiting.</p>
+        <p className='text-lg text-center pt-5'>Hi I am Tristan Pagden I am a software engineer with particular interest in artificial intelligence and machine learning but also with skills in other areas of computer science and programming such as web development. I also have an interest in the natural sciences, maths and cybersecuirty. Here I will show you some of my projects and qualifications, and also my tutoring service. I hope you find this page enjoyable and interesting, thank you for visiting.</p>
         <div className='pt-7'>
           <Link href='https://github.com/TristanPagden'>
           <Image src='/github.png' width={40} height={40} alt='github pic' className='inline mr-3 ' title='GitHub'></Image>
@@ -32,8 +34,8 @@ export default function Home() {
           </div>
           <div className='flex flex-col w-1/4 rounded-md shadow-xl mx-auto'>
             <div className='bg-slate-700 p-2 w-full text-center rounded-xl'>
-              <p className='text-base text-white text-center mb-2'>Check out some of my qualifications</p>
-              <a className='bg-slate-600 hover:bg-slate-500 text-white rounded-md p-1 font-bold' href='/qualifications'>Qualifications</a>
+              <p className='text-base text-white text-center mb-2'>Check out my resume here</p>
+              <a className='bg-slate-600 hover:bg-slate-500 text-white rounded-md p-1 font-bold' href='/CV.pdf' target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
           </div>
         </div>
@@ -54,6 +56,7 @@ export default function Home() {
         <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Node JS</h1>
         <h1 className='text-white font-bold text-lg bg-slate-900 inline-block px-2 py-1 mx-1 my-2'>Express JS</h1>
       </div>
+      <h1 className='text-xl font-bold text-center mt-20'>Contact me - tutoringbytristan@gmail.com</h1>
     </>
   )
 }

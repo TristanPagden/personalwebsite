@@ -11,7 +11,7 @@ const Sidebar = () => {
       <br/>
       <a href='/projects' className='text-white italic text-xl mt-4 text-center inline-block'>Projects</a>
       <br/>
-      <a href='/qualifications' className='text-white italic text-xl mt-4 text-center inline-block'>Qualifications</a>
+      <a href='/CV.pdf' target="_blank" rel="noopener noreferrer" className='text-white italic text-xl mt-4 text-center inline-block'>Resume</a>
       <br/>
       <a href='/tutoring' className='text-white italic text-xl mt-4 text-center inline-block'>Tutoring</a>
       <br/>
