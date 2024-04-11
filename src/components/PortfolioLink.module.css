@@ -1,0 +1,20 @@
+.portfoliopage {
+    display: flex;
+    left: 0;
+    width: 100%;
+    background-color: #6eca6e;
+    border: none;
+    padding-left: 0;
+  }
+
+  .portfolio {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+  }
+  .title{
+    text-align: center;
+    font-family: "Nunito";
+  }
