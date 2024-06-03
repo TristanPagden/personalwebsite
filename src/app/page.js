@@ -8,7 +8,7 @@ export default function Home() {
     <> 
       <div id='#about' className='text-center mx-auto mt-10 w-1/2 mt-20'>
         <h1 className='text-3xl font-bold text-center'>Tristan Pagden - Homepage</h1>
-        <p className='text-lg text-center pt-5'>Hi I am Tristan Pagden I am a software engineer with particular interest in artificial intelligence and machine learning but also with skills in other areas of computer science and programming such as web development. I also have an interest in the natural sciences, maths and cybersecuirty. Here I will show you some of my projects and qualifications, and also my tutoring service. I hope you find this page enjoyable and interesting, thank you for visiting.</p>
+        <p className='text-lg text-center pt-5'>Hi I am Tristan Pagden I am a software engineer with particular interest in artificial intelligence and machine learning but also with skills in other areas of computer science and programming such as web development. I also have an interest in the natural sciences and maths. Here I will show you some of my projects and qualifications, and also my tutoring service. I hope you find this page enjoyable and interesting, thank you for visiting.</p>
         <div className='pt-7'>
           <Link href='https://github.com/TristanPagden'>
           <Image src='/github.png' width={40} height={40} alt='github pic' className='inline mr-3 ' title='GitHub'></Image>
