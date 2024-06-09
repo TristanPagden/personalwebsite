@@ -4,6 +4,14 @@ import Project from '@/components/Project'
 const other = () => {
   return (
     <div className=''>
+      <div role="tablist" className="tabs tabs-lifted tabs-lg">
+        <a href='/projects/AI' className='tab' role='tab'>Artificial Intelligence</a>
+        <a href='/projects/web' className='tab' role='tab'>Web Development</a>
+        <a href='/projects/games' className='tab' role='tab'>Games</a>
+        <a href='/projects/finance' className='tab' role='tab'>Finance</a>
+        <a href='/projects/other' className='tab tab-active' role='tab'>Other</a>
+      </div>
+      <br />
       <div className='w-full'>
         <Project props={{title: 'Page rank algorithm', codeLink: 'https://replit.com/@tristanpagden/Page-rank-algorithm', demoLink:'https://replit.com/@tristanpagden/Page-rank-algorithm', image: '/projects/other/page_rank.jpg'}}></Project>
         <Project props={{title: '7 degrees of Kevin Bacon', codeLink: 'https://replit.com/@tristanpagden/7-degrees-of-Kevin-Bacon', demoLink:'https://replit.com/@tristanpagden/7-degrees-of-Kevin-Bacon', image: '/projects/other/degrees.jpeg'}}></Project>

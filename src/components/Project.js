@@ -4,15 +4,19 @@ import Link from 'next/link'
 
 const Project = ({props}) => {
   return (
-    <div className='my-2 w-1/4 inline-block px-2'>
-        <h1 className='text-xl text-white bg-slate-700 text-center font-bold p-1'>{props.title}</h1>  
-        <Link href={props.demoLink}>
-        <Image src={props.image} width={400} height={400} className='hover:opacity-50'></Image>
-        </Link>
-        <div className='bg-slate-700 p-2 text-left'>
-          <a className='bg-slate-600 hover:bg-slate-500 text-white text-lg py-1 px-2 rounded-md font-bold my-1 mx-2 inline-block' href={props.codeLink}>Code</a>
-          <a className='bg-slate-600 hover:bg-slate-500 text-white text-lg py-1 px-2 rounded-md font-bold my-1 mx-2 inline-block' href={props.demoLink}>Demo</a>
+    <div className="card w-96 bg-base-100 shadow-xl inline-block mr-4 mb-4">
+      <figure><img className='hover:opacity-50 w-full' src={props.image} /></figure>
+      <div className="card-body">
+        <h2 className="card-title">{props.title}</h2>
+        <div className="card-actions justify-end">
+        <a href={props.demoLink}>
+          <button className="btn btn-neutral">Demo</button>
+        </a>
+        <a href={props.codeLink}>
+          <button className="btn btn-neutral">Code</button>
+        </a>
         </div>
+      </div>
     </div>
     
   )
