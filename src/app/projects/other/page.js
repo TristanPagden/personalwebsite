@@ -13,7 +13,7 @@ const other = () => {
       </div>
       <br />
       <div className='w-full'>
-        <Project props={{title: 'Chemical engineering simulation', codeLink: 'https://github.com/TristanPagden/ChemicalEngSim', demoLink:'http://dotnetfiddle.net/LRW6F2'}}></Project>
+        <Project props={{title: 'Chemical engineering simulation', codeLink: 'https://github.com/TristanPagden/ChemicalEngSim', demoLink:'http://dotnetfiddle.net/LRW6F2', image: '/projects/other/ChemEng.jpg'}}></Project>
         <Project props={{title: 'Page rank algorithm', codeLink: 'https://replit.com/@tristanpagden/Page-rank-algorithm', demoLink:'https://replit.com/@tristanpagden/Page-rank-algorithm', image: '/projects/other/page_rank.jpg'}}></Project>
         <Project props={{title: '7 degrees of Kevin Bacon', codeLink: 'https://replit.com/@tristanpagden/7-degrees-of-Kevin-Bacon', demoLink:'https://replit.com/@tristanpagden/7-degrees-of-Kevin-Bacon', image: '/projects/other/degrees.jpeg'}}></Project>
         <Project props={{title: 'Knights and Knaves logic puzzle', codeLink: 'https://replit.com/@tristanpagden/Knights-and-Knaves-logic-puzzle', demoLink:'https://replit.com/@tristanpagden/Knights-and-Knaves-logic-puzzle', image: '/projects/other/knights.jpeg'}}></Project>
