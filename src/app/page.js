@@ -37,13 +37,13 @@ export default function Home() {
           <pre data-prefix=">"><code>HTML</code></pre>
           <pre data-prefix=">"><code>CSS</code></pre>
           <pre data-prefix=">"><code>Rust</code></pre>
+          <pre data-prefix=">"><code>C#</code></pre>
           <pre data-prefix=">"><code>Unity</code></pre>
           <pre data-prefix=">"><code>Tensorflow</code></pre>
           <pre data-prefix=">"><code>Pytorch</code></pre>
           <pre data-prefix=">"><code>Tailwind CSS</code></pre>
           <pre data-prefix=">"><code>React JS</code></pre>
           <pre data-prefix=">"><code>Next JS</code></pre>
-          <pre data-prefix=">"><code>Express JS</code></pre>
         </div>
       </div>
       <h1 className='mt-1 mb-5 text-xl font-bold text-center'>Contact me at tristanpagden@gmail.com</h1>
